@@ -1,33 +1,35 @@
 import { useState } from "react";
+import gallery1 from "@/assets/gallery-1.webp";
+import gallery2 from "@/assets/gallery-2.webp";
+import gallery3 from "@/assets/gallery-3.webp";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  // Using the actual property images from the original website
   const images = [
     {
-      url: "https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-53.jpg-SMALL.JPG",
-      alt: "Luxury home exterior with mountain views"
+      url: gallery1,
+      alt: "Luxury home exterior with pool and mountain views"
+    },
+    {
+      url: gallery2,
+      alt: "Modern luxury kitchen with granite countertops"
+    },
+    {
+      url: gallery3,
+      alt: "Real estate keys symbolizing your dream home"
     },
     {
       url: "https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-41.jpg-SMALL.JPG",
       alt: "Beautiful living room with modern design"
     },
     {
-      url: "https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4460%20Roseworthy-52.jpg-SMALL.JPG",
-      alt: "Elegant kitchen with granite countertops"
-    },
-    {
       url: "https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-14.jpg-SMALL.JPG",
       alt: "Spacious master bedroom"
     },
     {
-      url: "https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-45.jpg-SMALL.JPG",
-      alt: "Modern bathroom with luxury finishes"
-    },
-    {
       url: "https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-50.jpg-SMALL.JPG",
-      alt: "Backyard with pool and entertainment area"
+      alt: "Backyard with entertainment area"
     }
   ];
 

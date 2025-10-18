@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search } from "lucide-react";
+import associations from "@/assets/associations.png";
 
 const PropertySearch = () => {
   return (
@@ -105,19 +106,12 @@ const PropertySearch = () => {
         </div>
 
         {/* Association Logos */}
-        <div className="flex flex-wrap items-center justify-center gap-8 mt-16 opacity-60">
-          <div className="text-center">
-            <p className="text-xs font-semibold text-muted-foreground">MLS Member</p>
-          </div>
-          <div className="text-center">
-            <p className="text-xs font-semibold text-muted-foreground">Equal Housing</p>
-          </div>
-          <div className="text-center">
-            <p className="text-xs font-semibold text-muted-foreground">REALTOR®</p>
-          </div>
-          <div className="text-center">
-            <p className="text-xs font-semibold text-muted-foreground">Chamber Member</p>
-          </div>
+        <div className="flex items-center justify-center mt-16">
+          <img 
+            src={associations} 
+            alt="Professional Affiliations - Ridge Realty, Equal Housing Opportunity, REALTOR®, Pahrump Valley Chamber of Commerce" 
+            className="max-w-full h-16 md:h-20 object-contain opacity-70"
+          />
         </div>
       </div>
     </section>

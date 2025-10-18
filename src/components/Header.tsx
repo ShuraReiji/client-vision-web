@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, Menu, X } from "lucide-react";
+import logo from "@/assets/logo.webp";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,18 +25,15 @@ const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex flex-col">
-            <h1 className={`font-serif text-2xl md:text-3xl font-bold transition-colors ${
-              isScrolled ? "text-primary" : "text-primary-foreground"
-            }`}>
-              Marci Metzger
-            </h1>
-            <span className={`text-xs md:text-sm tracking-wider transition-colors ${
-              isScrolled ? "text-muted-foreground" : "text-primary-foreground/90"
-            }`}>
-              THE RIDGE REALTY GROUP
-            </span>
-          </div>
+          <a href="#home" className="flex items-center gap-3">
+            <img 
+              src={logo} 
+              alt="Marci Metzger Homes - The Ridge Realty Group" 
+              className={`h-12 md:h-16 w-auto transition-all ${
+                isScrolled ? "brightness-100" : "brightness-0 invert"
+              }`}
+            />
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
