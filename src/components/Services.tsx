@@ -36,8 +36,9 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 md:py-32 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="services" className="py-20 md:py-32 bg-gradient-subtle relative">
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5"></div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <p className="text-accent font-semibold text-sm tracking-wider uppercase mb-2">
             Our Services

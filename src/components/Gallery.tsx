@@ -1,7 +1,6 @@
 import { useState } from "react";
 import gallery1 from "@/assets/gallery-1.webp";
 import gallery2 from "@/assets/gallery-2.webp";
-import gallery3 from "@/assets/gallery-3.webp";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -14,10 +13,6 @@ const Gallery = () => {
     {
       url: gallery2,
       alt: "Modern luxury kitchen with granite countertops"
-    },
-    {
-      url: gallery3,
-      alt: "Real estate keys symbolizing your dream home"
     },
     {
       url: "https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-41.jpg-SMALL.JPG",
