@@ -31,7 +31,7 @@ const Header = () => {
               src={logo} 
               alt="Marci Metzger Homes - The Ridge Realty Group" 
               className={`h-12 md:h-16 w-auto transition-all ${
-                isScrolled ? "brightness-100" : "brightness-0 invert"
+                isScrolled ? "" : "brightness-0 invert dark:brightness-100 dark:invert-0"
               }`}
             />
           </a>
@@ -41,7 +41,7 @@ const Header = () => {
             <a
               href="#home"
               className={`font-medium transition-colors hover:text-accent ${
-                isScrolled ? "text-foreground" : "text-primary-foreground"
+                isScrolled ? "text-foreground" : "text-white"
               }`}
             >
               Home
@@ -49,7 +49,7 @@ const Header = () => {
             <a
               href="#about"
               className={`font-medium transition-colors hover:text-accent ${
-                isScrolled ? "text-foreground" : "text-primary-foreground"
+                isScrolled ? "text-foreground" : "text-white"
               }`}
             >
               About
@@ -57,7 +57,7 @@ const Header = () => {
             <a
               href="#services"
               className={`font-medium transition-colors hover:text-accent ${
-                isScrolled ? "text-foreground" : "text-primary-foreground"
+                isScrolled ? "text-foreground" : "text-white"
               }`}
             >
               Services
@@ -65,7 +65,7 @@ const Header = () => {
             <a
               href="#gallery"
               className={`font-medium transition-colors hover:text-accent ${
-                isScrolled ? "text-foreground" : "text-primary-foreground"
+                isScrolled ? "text-foreground" : "text-white"
               }`}
             >
               Gallery
@@ -73,7 +73,7 @@ const Header = () => {
             <a
               href="#contact"
               className={`font-medium transition-colors hover:text-accent ${
-                isScrolled ? "text-foreground" : "text-primary-foreground"
+                isScrolled ? "text-foreground" : "text-white"
               }`}
             >
               Contact
@@ -97,7 +97,7 @@ const Header = () => {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`p-2 transition-colors ${
-                isScrolled ? "text-foreground" : "text-primary-foreground"
+                isScrolled ? "text-foreground" : "text-white"
               }`}
               aria-label="Toggle menu"
             >

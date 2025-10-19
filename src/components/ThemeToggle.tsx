@@ -15,7 +15,7 @@ const ThemeToggle = ({ isScrolled }: ThemeToggleProps) => {
       size="icon"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className={`transition-colors ${
-        isScrolled ? "text-foreground" : "text-primary-foreground"
+        isScrolled ? "text-foreground" : "text-white"
       }`}
       aria-label="Toggle theme"
     >

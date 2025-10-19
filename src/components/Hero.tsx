@@ -16,7 +16,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
+      <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto space-y-6 animate-fade-in">
           <p className="text-sm md:text-base tracking-[0.3em] uppercase font-medium opacity-90">
             The Ridge Realty Group
@@ -42,7 +42,7 @@ const Hero = () => {
               asChild
               size="lg"
               variant="outline"
-              className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 text-lg px-8 py-6"
+              className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 text-lg px-8 py-6"
             >
               <a href="#listings" className="flex items-center gap-2">
                 <Home className="h-5 w-5" />
@@ -55,8 +55,8 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary-foreground/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-1.5 bg-primary-foreground/50 rounded-full"></div>
+        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
+          <div className="w-1.5 h-1.5 bg-white/50 rounded-full"></div>
         </div>
       </div>
     </section>
