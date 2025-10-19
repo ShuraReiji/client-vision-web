@@ -35,7 +35,7 @@ const Stats = () => {
             return (
               <div
                 key={index}
-                className="text-center text-primary-foreground space-y-4 animate-fade-in"
+                className="text-center text-white space-y-4 animate-fade-in"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/20 backdrop-blur-sm mb-4">
