@@ -31,7 +31,9 @@ const Header = () => {
               src={logo} 
               alt="Marci Metzger Homes - The Ridge Realty Group" 
               className={`h-12 md:h-16 w-auto transition-all ${
-                isScrolled ? "" : "brightness-0 invert dark:brightness-100 dark:invert-0"
+                 isScrolled
+              ? "dark:invert dark:brightness-150 brightness-100" // stays white in dark mode while scrolling
+              : "brightness-100 dark:invert dark:brightness-150" // white in dark mode, normal in light
               }`}
             />
           </a>
